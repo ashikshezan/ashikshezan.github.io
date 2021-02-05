@@ -6,8 +6,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/ashikshezan.github.io/resume" component={Resume} />
+        <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+        <Route exact path="/resume" component={Resume} />
       </Switch>
     </Router>
   );
